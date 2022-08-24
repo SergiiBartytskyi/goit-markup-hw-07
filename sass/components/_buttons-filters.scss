@@ -11,8 +11,6 @@
 .portfolio-btn {
 	display: inline-block;
 	padding: 6px 22px;
-	border-radius: 4px;
-	border: none;
 
 	font-family: inherit;
 	font-weight: 500;
@@ -26,8 +24,6 @@
 	transition: color var(--transition-duration) var(--transition-timing-function),
 		background-color var(--transition-duration) var(--transition-timing-function),
 		box-shadow var(--transition-duration) var(--transition-timing-function);
-
-	cursor: pointer;
 }
 
 .portfolio-btn:hover,
