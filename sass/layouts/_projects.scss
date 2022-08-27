@@ -35,9 +35,7 @@
 	color: var(--tertiary-text-color);
 	background-color: var(--overlay);
 
-	font-size: 18px;
-	line-height: 1.56;
-	letter-spacing: 0.03em;
+	@include font(null, 18px, 1.56, 0.03em);
 
 	transform: translateY(100%);
 	transition: transform var(--transition-duration) var(--transition-timing-function);
@@ -56,9 +54,8 @@
 
 .projects-title {
 	margin-bottom: 4px;
-	font-size: 18px;
-	line-height: 2;
-	letter-spacing: 0.06em;
+
+	@include font(null, 18px, 2, 0.06em);
 	color: var(--primary-text-color);
 }
 

@@ -36,6 +36,5 @@
 }
 
 .features-text {
-	font-size: 14px;
-	line-height: 1.71;
+	@include font(null, 14px, 1.71, null);
 }

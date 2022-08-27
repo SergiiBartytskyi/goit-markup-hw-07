@@ -349,18 +349,15 @@ body {
 .header {
   border-bottom: 1px solid #ececec;
 }
-
 .header-container {
   display: flex;
   align-items: center;
 }
-
 .header-nav {
   display: flex;
   align-items: center;
 }
 
-/* ---------- header-list ---------- */
 .header-list {
   display: flex;
 }
@@ -384,8 +381,9 @@ body {
   margin-right: 50px;
 }
 
-.header-link {
-  display: block;
+.header-link,
+.contacts-link {
+  display: flex;
   padding-top: 32px;
   padding-right: 2px;
   padding-left: 2px;
@@ -393,6 +391,9 @@ body {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+}
+
+.header-link {
   color: var(--primary-text-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
@@ -400,7 +401,6 @@ body {
   color: var(--accent-color);
 }
 
-/* ---------- contacts-list ---------- */
 .contacts-list {
   display: flex;
   margin-left: auto;
@@ -411,14 +411,7 @@ body {
 }
 
 .contacts-link {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
@@ -729,7 +722,6 @@ body {
 .footer-location,
 .footer-link {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }

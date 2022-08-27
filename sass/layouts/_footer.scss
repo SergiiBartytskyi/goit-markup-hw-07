@@ -21,9 +21,7 @@
 .footer-location,
 .footer-link {
 	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
+	@include font(null, 14px, 1.71, null);
 }
 
 .footer-location {
@@ -98,8 +96,9 @@
 .footer-title-input {
 	display: inline-block;
 	margin-bottom: 20px;
-	font-weight: 700;
-	font-size: 14px;
+
+	@include font(700, 14px, null, null);
+
 	text-transform: uppercase;
 	color: var(--tertiary-text-color);
 	cursor: pointer;
@@ -113,9 +112,7 @@
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.25;
+	@include font(400, 16px, 1.25, null);
 
 	color: var(--link-color);
 	background-color: transparent;
@@ -129,9 +126,7 @@
 	height: 50px;
 	margin-left: 12px;
 
-	font-weight: 700;
-	line-height: 1.88;
-	letter-spacing: 0.06em;
+	@include font(700, null, 1.88, 0.06em);
 
 	color: var(--tertiary-text-color);
 	background-color: var(--primary-btn-color);
