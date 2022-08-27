@@ -2,11 +2,11 @@
 	color: var(--secondary-text-color);
 }
 
-.features-list {
+.features__list {
 	display: flex;
 }
 
-.features-item {
+.features__item {
 	width: calc((100% - 3 * 30px) / 4);
 
 	&:not(:last-child) {
@@ -14,7 +14,7 @@
 	}
 }
 
-.features-item-icon {
+.features__wrap {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -24,17 +24,17 @@
 	background-color: var(--section-bg-color);
 }
 
-.feature-title,
+.features__title,
 .label {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: var(--primary-text-color);
 }
 
-.feature-title {
+.features__title {
 	margin-bottom: 10px;
 }
 
-.features-text {
+.features__text {
 	@include font(null, 14px, 1.71, null);
 }

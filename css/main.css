@@ -475,18 +475,18 @@ body {
   color: var(--secondary-text-color);
 }
 
-.features-list {
+.features__list {
   display: flex;
 }
 
-.features-item {
+.features__item {
   width: calc((100% - 90px) / 4);
 }
-.features-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-item-icon {
+.features__wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -496,18 +496,18 @@ body {
   background-color: var(--section-bg-color);
 }
 
-.feature-title,
+.features__title,
 .label {
   font-size: 14px;
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
 
-.feature-title {
+.features__title {
   margin-bottom: 10px;
 }
 
-.features-text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
 }
