@@ -18,24 +18,24 @@
 
 .header-list {
 	display: flex;
-}
 
-.header-list .current {
-	position: relative;
-	color: var(--accent-color);
-}
+	.current {
+		position: relative;
+		color: var(--accent-color);
 
-.current::after {
-	display: block;
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: -1px;
-	width: 100%;
-	height: 4px;
-	border-radius: 2px;
+		&::after {
+			display: block;
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: -1px;
+			width: 100%;
+			height: 4px;
+			border-radius: 2px;
 
-	background-color: var(--accent-color);
+			background-color: var(--accent-color);
+		}
+	}
 }
 
 .header-item:not(:last-child) {
@@ -54,11 +54,11 @@
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
 	transition: color var(--transition-duration) var(--transition-timing-function);
-}
 
-.header-link:hover,
-.header-link:focus {
-	color: var(--accent-color);
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
 }
 
 /* ---------- contacts-list ---------- */
@@ -83,11 +83,11 @@
 	letter-spacing: 0.02em;
 	color: var(--secondary-text-color);
 	transition: color var(--transition-duration) var(--transition-timing-function);
-}
 
-.contacts-link:hover,
-.contacts-link:focus {
-	color: var(--accent-color);
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
 }
 
 .header-contact-icon {

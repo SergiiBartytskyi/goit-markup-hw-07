@@ -12,11 +12,12 @@
 
 	transition: visibility var(--transition-duration) var(--transition-timing-function),
 		opacity var(--transition-duration) var(--transition-timing-function);
-}
-.backdrop.is-hidden {
-	visibility: hidden;
-	opacity: 0;
-	pointer-events: none;
+
+	&.is-hidden {
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+	}
 }
 
 .modal {
@@ -34,10 +35,10 @@
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform var(--transition-duration) var(--transition-timing-function),
 		scale var(--transition-duration) var(--transition-timing-function);
-}
 
-.backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0);
+	.backdrop.is-hidden & {
+		transform: translate(-50%, -50%) scale(0);
+	}
 }
 
 .btn-close {
@@ -52,13 +53,12 @@
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background: #ffffff;
-	/* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
 	transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.btn-close:hover,
-.btn-close:focus {
-	fill: var(--accent-color);
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+	}
 }
 
 .modal-title {
@@ -114,13 +114,11 @@
 	cursor: pointer;
 
 	transition: border-color var(--transition-duration) var(--transition-timing-function);
-}
 
-.modal-input:hover,
-.modal-input:focus,
-.modal-textarea:hover,
-.modal-textarea:focus {
-	border-color: var(--accent-color);
+	&:hover,
+	&:focus {
+		border-color: var(--accent-color);
+	}
 }
 
 .modal-icon {
@@ -130,11 +128,11 @@
 	transform: translateY(-50%);
 
 	transition: fill var(--transition-duration) var(--transition-timing-function);
-}
 
-.modal-input:hover + .modal-icon,
-.modal-input:focus + .modal-icon {
-	fill: var(--accent-color);
+	.modal-input:hover + &,
+	.modal-input:focus + & {
+		fill: var(--accent-color);
+	}
 }
 
 .textarea-field {
@@ -159,16 +157,20 @@
 	cursor: pointer;
 
 	transition: border-color var(--transition-duration) var(--transition-timing-function);
-}
 
-.modal-textarea::placeholder {
-	color: rgba(117, 117, 117, 0.5);
+	&:hover,
+	&:focus {
+		border-color: var(--accent-color);
+	}
+
+	&::placeholder {
+		color: rgba(117, 117, 117, 0.5);
+	}
 }
 
 /* ---------- checkbox ---------- */
 
-.check-label,
-.label-policy {
+.check-label {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -176,39 +178,39 @@
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--secondary-text-color);
-}
 
-.check-label span {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 16px;
-	height: 15px;
-	border: 2px solid #212121;
-	border-radius: 2px;
-	margin-right: 8px;
-	transition: background-color var(--transition-duration) var(--transition-timing-function),
-		border-color var(--transition-duration) var(--transition-timing-function);
-}
+	span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 16px;
+		height: 15px;
+		border: 2px solid #212121;
+		border-radius: 2px;
+		margin-right: 8px;
+		transition: background-color var(--transition-duration) var(--transition-timing-function),
+			border-color var(--transition-duration) var(--transition-timing-function);
 
-.check-label-icon {
-	fill: transparent;
-	transition: fill var(--transition-duration) var(--transition-timing-function);
-}
+		.modal-check:checked + & {
+			background-color: var(--accent-color);
+			border-color: var(--accent-color);
+			fill: #ffffff;
+		}
 
-.modal-check:checked + .check-label span {
-	background-color: var(--accent-color);
-	border-color: var(--accent-color);
-}
+		.modal-check:focus + & {
+			border-color: var(--accent-color);
+		}
 
-.modal-check:focus + .check-label span {
-	border-color: var(--accent-color);
-}
-.modal-check:checked + .check-label .check-label-icon {
-	fill: #ffffff;
+		& {
+			fill: transparent;
+			transition: fill var(--transition-duration) var(--transition-timing-function);
+		}
+	}
 }
 
 .label-policy {
+	margin-left: 8px;
+
 	text-decoration-line: underline;
 
 	color: var(--accent-color);

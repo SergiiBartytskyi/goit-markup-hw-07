@@ -12,12 +12,17 @@
 	margin-right: 93px;
 	padding-top: 24px;
 	padding-bottom: 25px;
+
+	span {
+		color: var(--logo-color);
+	}
 }
 
-.header-logo span {
-	color: var(--logo-color);
-}
+.footer-logo {
+	display: block;
+	margin-bottom: 20px;
 
-.footer-logo span {
-	color: var(--tertiary-text-color);
+	span {
+		color: var(--tertiary-text-color);
+	}
 }

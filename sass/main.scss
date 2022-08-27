@@ -2,15 +2,17 @@
 @import "./base/reset";
 @import "./base/common";
 @import "./utils/hidden";
+
 @import "./components/container";
 @import "./components/logo";
+@import "./components/modal";
+@import "./components/buttons-filters";
+
 @import "./layouts/header";
 @import "./layouts/hero";
-@import "./components/features";
-@import "./components/abaut";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/buttons-filters";
-@import "./components/projects";
-@import "./components/footer";
-@import "./components/modal";
+@import "./layouts/features";
+@import "./layouts/abaut";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/projects";
+@import "./layouts/footer";
