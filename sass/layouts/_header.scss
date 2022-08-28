@@ -18,7 +18,7 @@
 
 	.current {
 		position: relative;
-		color: var(--accent-color);
+		color: $accent-color;
 
 		&::after {
 			display: block;
@@ -30,7 +30,7 @@
 			height: 4px;
 			border-radius: 2px;
 
-			background-color: var(--accent-color);
+			background-color: $accent-color;
 		}
 	}
 }
@@ -50,12 +50,12 @@
 }
 
 .navigation__link {
-	color: var(--primary-text-color);
-	transition: color var(--transition-duration) var(--transition-timing-function);
+	color: $primary-text-color;
+	transition: color $transition-duration $transition-timing-function;
 
 	&:hover,
 	&:focus {
-		color: var(--accent-color);
+		color: $accent-color;
 	}
 }
 // ---------- contacts-list ----------
@@ -71,12 +71,12 @@
 
 .contact__link {
 	font-style: normal;
-	color: var(--secondary-text-color);
-	transition: color var(--transition-duration) var(--transition-timing-function);
+	color: $secondary-text-color;
+	transition: color $transition-duration $transition-timing-function;
 
 	&:hover,
 	&:focus {
-		color: var(--accent-color);
+		color: $accent-color;
 	}
 }
 

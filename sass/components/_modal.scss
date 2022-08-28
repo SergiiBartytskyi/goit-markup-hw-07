@@ -10,8 +10,8 @@
 	visibility: visible;
 	opacity: 1;
 
-	transition: visibility var(--transition-duration) var(--transition-timing-function),
-		opacity var(--transition-duration) var(--transition-timing-function);
+	transition: visibility $transition-duration $transition-timing-function,
+		opacity $transition-duration $transition-timing-function;
 
 	&.is-hidden {
 		visibility: hidden;
@@ -28,13 +28,13 @@
 	width: 528px;
 	min-height: 581px;
 
-	background: var(--primary-bg-color);
+	background: $primary-bg-color;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 
 	transform: translate(-50%, -50%) scale(1);
-	transition: transform var(--transition-duration) var(--transition-timing-function),
-		scale var(--transition-duration) var(--transition-timing-function);
+	transition: transform $transition-duration $transition-timing-function,
+		scale $transition-duration $transition-timing-function;
 
 	.backdrop.is-hidden & {
 		transform: translate(-50%, -50%) scale(0);
@@ -53,11 +53,11 @@
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background: #ffffff;
-	transition: fill var(--transition-duration) var(--transition-timing-function);
+	transition: fill $transition-duration $transition-timing-function;
 
 	&:hover,
 	&:focus {
-		fill: var(--accent-color);
+		fill: $accent-color;
 	}
 }
 
@@ -70,7 +70,7 @@
 	text-align: center;
 	letter-spacing: 0.03em;
 
-	color: var(--primary-text-color);
+	color: $primary-text-color;
 }
 
 .modal-form {
@@ -88,7 +88,7 @@
 	line-height: 1.17;
 	letter-spacing: 0.01em;
 
-	color: var(--secondary-text-color);
+	color: $secondary-text-color;
 
 	cursor: pointer;
 }
@@ -101,7 +101,7 @@
 
 	cursor: pointer;
 
-	transition: fill var(--transition-duration) var(--transition-timing-function);
+	transition: fill $transition-duration $transition-timing-function;
 }
 
 .modal-input {
@@ -113,11 +113,11 @@
 	outline: transparent;
 	cursor: pointer;
 
-	transition: border-color var(--transition-duration) var(--transition-timing-function);
+	transition: border-color $transition-duration $transition-timing-function;
 
 	&:hover,
 	&:focus {
-		border-color: var(--accent-color);
+		border-color: $accent-color;
 	}
 }
 
@@ -127,11 +127,11 @@
 	top: 50%;
 	transform: translateY(-50%);
 
-	transition: fill var(--transition-duration) var(--transition-timing-function);
+	transition: fill $transition-duration $transition-timing-function;
 
 	.modal-input:hover + &,
 	.modal-input:focus + & {
-		fill: var(--accent-color);
+		fill: $accent-color;
 	}
 }
 
@@ -156,11 +156,11 @@
 
 	cursor: pointer;
 
-	transition: border-color var(--transition-duration) var(--transition-timing-function);
+	transition: border-color $transition-duration $transition-timing-function;
 
 	&:hover,
 	&:focus {
-		border-color: var(--accent-color);
+		border-color: $accent-color;
 	}
 
 	&::placeholder {
@@ -177,7 +177,7 @@
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: var(--secondary-text-color);
+	color: $secondary-text-color;
 
 	span {
 		display: flex;
@@ -188,22 +188,22 @@
 		border: 2px solid #212121;
 		border-radius: 2px;
 		margin-right: 8px;
-		transition: background-color var(--transition-duration) var(--transition-timing-function),
-			border-color var(--transition-duration) var(--transition-timing-function);
+		transition: background-color $transition-duration $transition-timing-function,
+			border-color $transition-duration $transition-timing-function;
 
 		.modal-check:checked + & {
-			background-color: var(--accent-color);
-			border-color: var(--accent-color);
+			background-color: $accent-color;
+			border-color: $accent-color;
 			fill: #ffffff;
 		}
 
 		.modal-check:focus + & {
-			border-color: var(--accent-color);
+			border-color: $accent-color;
 		}
 
 		& {
 			fill: transparent;
-			transition: fill var(--transition-duration) var(--transition-timing-function);
+			transition: fill $transition-duration $transition-timing-function;
 		}
 	}
 }
@@ -213,7 +213,7 @@
 
 	text-decoration-line: underline;
 
-	color: var(--accent-color);
+	color: $accent-color;
 }
 
 .modal-btn {
@@ -230,14 +230,14 @@
 	text-align: center;
 	letter-spacing: 0.06em;
 
-	color: var(--tertiary-text-color);
-	background-color: var(--primary-btn-color);
+	color: $tertiary-text-color;
+	background-color: $primary-btn-color;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-	transition: background-color var(--transition-duration) var(--transition-timing-function);
+	transition: background-color $transition-duration $transition-timing-function;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-	background-color: var(--button-hover);
+	background-color: $button-hover;
 }
