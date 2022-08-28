@@ -1,9 +1,9 @@
-.projects-list {
+.projects__list {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.project-item {
+.project__item {
 	flex-basis: calc((100% - 2 * 30px) / 3);
 
 	&:not(:nth-child(3n)) {
@@ -15,17 +15,17 @@
 	}
 }
 
-.project-link {
+.project__link {
 	display: block;
 	transition: box-shadow $transition-duration $transition-timing-function;
 }
 
-.project-overlay {
+.overlay {
 	position: relative;
 	overflow: hidden;
 }
 
-.project-text {
+.overlay__text {
 	position: absolute;
 	padding: 63px 24px;
 	top: 0;
@@ -40,26 +40,26 @@
 	transform: translateY(100%);
 	transition: transform $transition-duration $transition-timing-function;
 
-	.project-link:hover &,
-	.project-link:focus & {
+	.project__link:hover &,
+	.project__link:focus & {
 		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 		transform: translateY(0);
 	}
 }
 
-.project-info {
+.info__wrap {
 	padding: 20px 24px;
 	border: 1px solid #eeeeee;
 }
 
-.projects-title {
+.info__title {
 	margin-bottom: 4px;
 
 	@include font(null, 18px, 2, 0.06em);
 	color: $primary-text-color;
 }
 
-.projects-text {
+.info__text {
 	line-height: 1.88;
 	color: $secondary-text-color;
 }
