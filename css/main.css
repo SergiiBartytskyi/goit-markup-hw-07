@@ -152,8 +152,8 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -235,7 +235,6 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* ---------- checkbox ---------- */
 .check-label {
   display: flex;
   justify-content: center;
@@ -285,8 +284,8 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -759,7 +758,6 @@ body {
   background-color: #2196f3;
 }
 
-/* ---------- mailing list ---------- */
 .footer-form {
   display: flex;
   align-items: flex-end;

@@ -64,12 +64,8 @@
 .modal-title {
 	margin-bottom: 12px;
 
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 1.15;
+	@include font(700, 20px, 1.15, 0.03em);
 	text-align: center;
-	letter-spacing: 0.03em;
-
 	color: $primary-text-color;
 }
 
@@ -83,11 +79,7 @@
 }
 
 .modal-label {
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.17;
-	letter-spacing: 0.01em;
-
+	@include font(400, 12px, 1.17, 0.01em);
 	color: $secondary-text-color;
 
 	cursor: pointer;
@@ -149,9 +141,7 @@
 	border-radius: 4px;
 	outline: transparent;
 
-	font-size: 12px;
-	line-height: 1.17;
-	letter-spacing: 0.01em;
+	@include font(null, 12px, 1.17, 0.01em);
 	resize: none;
 
 	cursor: pointer;
@@ -168,15 +158,13 @@
 	}
 }
 
-/* ---------- checkbox ---------- */
+// ---------- checkbox ----------
 
 .check-label {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 14px;
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+	@include font(null, 14px, 1.71, 0.03em);
 	color: $secondary-text-color;
 
 	span {
@@ -224,11 +212,8 @@
 	margin-left: auto;
 	margin-right: auto;
 
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.88;
+	@include font(700, 16px, 1.88, 0.06em);
 	text-align: center;
-	letter-spacing: 0.06em;
 
 	color: $tertiary-text-color;
 	background-color: $primary-btn-color;
