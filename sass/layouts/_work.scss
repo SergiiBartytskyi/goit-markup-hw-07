@@ -1,25 +1,23 @@
-.abaut {
+.work {
 	padding-top: 0;
 
 	text-align: center;
 }
 
-.title {
+.work__title {
 	margin-bottom: 50px;
-
-	@include font(null, 36px, 1.17, null);
 }
 
-.abaut-list {
+.work__list {
 	display: flex;
 	justify-content: space-between;
 }
 
-.abaut-item {
+.work__item {
 	position: relative;
 }
 
-.label {
+.work__subtitle {
 	position: absolute;
 	display: flex;
 	justify-content: center;

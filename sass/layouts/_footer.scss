@@ -44,10 +44,8 @@
 	}
 }
 
-.footer-title {
+.footer__subtitle {
 	margin-bottom: 20px;
-	font-size: 14px;
-	text-transform: uppercase;
 	color: $tertiary-text-color;
 }
 
@@ -82,7 +80,6 @@
 }
 
 // ---------- mailing list ----------
-
 .footer-form {
 	display: flex;
 	align-items: flex-end;
@@ -94,13 +91,10 @@
 	flex-direction: column;
 }
 
-.footer-title-input {
+.footer__subtitle {
 	display: inline-block;
 	margin-bottom: 20px;
 
-	@include font(700, 14px, null, null);
-
-	text-transform: uppercase;
 	color: $tertiary-text-color;
 	cursor: pointer;
 }

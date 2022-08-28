@@ -1,7 +1,3 @@
-.features {
-	color: $secondary-text-color;
-}
-
 .features__list {
 	display: flex;
 }
@@ -24,17 +20,12 @@
 	background-color: $section-bg-color;
 }
 
-.features__title,
-.label {
-	font-size: 14px;
-	text-transform: uppercase;
+.features__subtitle {
 	color: $primary-text-color;
-}
-
-.features__title {
 	margin-bottom: 10px;
 }
 
 .features__text {
 	@include font(null, 14px, 1.71, null);
+	color: $secondary-text-color;
 }

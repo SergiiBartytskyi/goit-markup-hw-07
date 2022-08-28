@@ -297,6 +297,20 @@ body {
   background-color: #188ce8;
 }
 
+.title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
 .buttons-list {
   display: flex;
   justify-content: center;
@@ -453,10 +467,6 @@ body {
   background-color: #188ce8;
 }
 
-.features {
-  color: #757575;
-}
-
 .features__list {
   display: flex;
 }
@@ -478,43 +488,36 @@ body {
   background-color: #f5f4fa;
 }
 
-.features__title,
-.label {
-  font-size: 14px;
-  text-transform: uppercase;
+.features__subtitle {
   color: #212121;
-}
-
-.features__title {
   margin-bottom: 10px;
 }
 
 .features__text {
   font-size: 14px;
   line-height: 1.71;
+  color: #757575;
 }
 
-.abaut {
+.work {
   padding-top: 0;
   text-align: center;
 }
 
-.title {
+.work__title {
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
 }
 
-.abaut-list {
+.work__list {
   display: flex;
   justify-content: space-between;
 }
 
-.abaut-item {
+.work__item {
   position: relative;
 }
 
-.label {
+.work__subtitle {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -532,47 +535,51 @@ body {
   background-color: #f5f4fa;
 }
 
-.team-list {
+.team__title {
+  margin-bottom: 50px;
+}
+
+.card-list {
   display: flex;
   justify-content: space-between;
 }
 
-.team-item {
+.card-list__item {
   width: 270px;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team-info {
+.card-list__wrap {
   padding: 30px 32px;
   text-align: center;
 }
 
-.team-title {
+.card-list__title {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
 }
 
-.team-text {
+.card-list__text {
   color: #757575;
   margin-bottom: 16px;
 }
 
-.team-social-list {
+.socials {
   display: flex;
 }
 
-.team-social-item {
+.socials__item {
   width: 44px;
   height: 44px;
 }
-.team-social-item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-social-link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -582,13 +589,17 @@ body {
   fill: #afb1b8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-social-link:hover, .team-social-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: #2196f3;
   fill: #ffffff;
 }
 
 .clients {
   text-align: center;
+}
+
+.clients__title {
+  margin-bottom: 50px;
 }
 
 .clients-list {
@@ -724,10 +735,8 @@ body {
   color: #2196f3;
 }
 
-.footer-title {
+.footer__subtitle {
   margin-bottom: 20px;
-  font-size: 14px;
-  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -769,12 +778,9 @@ body {
   flex-direction: column;
 }
 
-.footer-title-input {
+.footer__subtitle {
   display: inline-block;
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
 }
