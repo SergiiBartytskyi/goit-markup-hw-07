@@ -5,26 +5,23 @@
 	background-color: $secondary-bg-color;
 }
 
-.footer-info {
+.footer__container {
 	display: flex;
 	align-items: baseline;
 }
 
-.footer-contact {
-	margin-right: 70px;
-}
+// ---------- Contacts ----------
 
-.footer-item:not(:last-child) {
+.address__item:not(:last-child) {
 	margin-bottom: 9px;
 }
 
-.footer-location,
-.footer-link {
+.address__link {
 	font-style: normal;
 	@include font(null, 14px, 1.71, null);
 }
 
-.footer-location {
+.address__link--white {
 	color: $tertiary-text-color;
 	transition: color $transition-duration $transition-timing-function;
 
@@ -34,7 +31,7 @@
 	}
 }
 
-.footer-link {
+.address__link--grey {
 	color: rgba(255, 255, 255, 0.6);
 	transition: color $transition-duration $transition-timing-function;
 
@@ -44,31 +41,17 @@
 	}
 }
 
+// ---------- socials ----------
 .footer__subtitle {
 	margin-bottom: 20px;
 	color: $tertiary-text-color;
 }
 
-.footer-socials-list {
-	display: flex;
+.footer__socials {
+	margin-left: 70px;
 }
 
-.footer-socials-item {
-	width: 44px;
-	height: 44px;
-
-	&:not(:last-child) {
-		margin-right: 10px;
-	}
-}
-
-.footer-socials-link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
+.socials__link--grey {
 	fill: $tertiary-text-color;
 	background-color: rgba(255, 255, 255, 0.1);
 	transition: background-color $transition-duration $transition-timing-function;
@@ -78,20 +61,19 @@
 		background-color: $accent-color;
 	}
 }
-
-// ---------- mailing list ----------
-.footer-form {
+// ---------- subscription ----------
+.footer__subscription {
 	display: flex;
 	align-items: flex-end;
 	margin-left: auto;
 }
 
-.footer-form-input {
+.subscription {
 	display: flex;
 	flex-direction: column;
 }
 
-.footer__subtitle {
+.subscription__subtitle {
 	display: inline-block;
 	margin-bottom: 20px;
 
@@ -99,7 +81,7 @@
 	cursor: pointer;
 }
 
-.footer-input {
+.subscription__input {
 	padding: 15px 16px;
 	width: 358px;
 	height: 50px;
@@ -113,7 +95,7 @@
 	background-color: transparent;
 }
 
-.footer-button {
+.subscription__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -135,7 +117,7 @@
 	}
 }
 
-.footer-input-icon {
+.subscription__icon {
 	margin-left: 10px;
 	fill: #ffffff;
 }
