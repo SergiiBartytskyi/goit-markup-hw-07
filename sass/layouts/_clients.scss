@@ -6,11 +6,11 @@
 	margin-bottom: 50px;
 }
 
-.clients-list {
+.clients__list {
 	display: flex;
 }
 
-.clients-item {
+.clients__item {
 	width: 170px;
 	height: 92px;
 
@@ -19,7 +19,7 @@
 	}
 }
 
-.clients-link {
+.clients__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
