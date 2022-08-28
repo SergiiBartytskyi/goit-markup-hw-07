@@ -1,14 +1,14 @@
-.buttons-list {
+.filter {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
 }
 
-.buttons-item:not(:last-child) {
+.filter__item:not(:last-child) {
 	margin-right: 8px;
 }
 
-.portfolio-btn {
+.filter__btn {
 	display: inline-block;
 	padding: 6px 22px;
 
